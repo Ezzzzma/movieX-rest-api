@@ -8,7 +8,7 @@ const movieSchema = new mongoose.Schema({
   actors: [{ type: mongoose.Schema.Types.ObjectId, ref: "Actor" }], // Defining a relation to another mode
   isNominated: { type: Boolean, default: false },
   release: Number,
-  imageUrl: String
+  movieUrl: String
 });
 
 //Create Movie model from movieSchema and Export Movie model
